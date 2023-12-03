@@ -14,7 +14,7 @@ const bgColors = [
   " hsl(43, 84%, 65%)",
 ];
 //Creamos un nuevo Array con la información de cada parte del tiempo
-let dailyArray = data.map((item) => item.timeframes.daily);
+let dailyArray = data.map((parametro) => parametro.timeframes.daily);
 let weeklyArray = data.map((item) => item.timeframes.weekly);
 let monthlyArray = data.map((item) => item.timeframes.monthly);
 elementos(dailyArray); //Función que se llama para evitar que esté sin nada al cargar la pagina
@@ -70,7 +70,7 @@ function elementos(info) {
           </div>
           <div class="card__time">
             <p class="card__time--hour">${element.current}hrs</p>
-            <p class="card__time--previus">Previous - ${element.previous}</p>
+            <p class="card__time--previus">Previous - ${element.previous}hrs</p>
           </div>
         </div>
       </div>`;
