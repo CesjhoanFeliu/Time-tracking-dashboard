@@ -199,4 +199,14 @@ body {
     margin-top: 0.4em;
     font-size: 40px;
   }
+  .card_background {
+    width: 100%;
+  }
+} /*Footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
