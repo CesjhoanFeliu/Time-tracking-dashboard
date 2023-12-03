@@ -93,6 +93,7 @@ body {
 
 .card_background {
   height: 82px;
+  width: 328px;
   border-radius: 18px 18px 0px 0px;
   overflow: hidden;
   background-color: #ff8a64;
