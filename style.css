@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+:root {
+  /*Primarios*/
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red/*(work)*/: hsl(15, 100%, 70%);
+  --Soft-blue/*(play)*/ : hsl(195, 74%, 62%);
+  --Light-red/*(study)*/: hsl(348, 100%, 68%);
+  --Lime-green/*(exercise)*/ : hsl(145, 58%, 55%);
+  --Violet/*(social)*/ : hsl(264, 64%, 52%);
+  --Soft-orange/*(self care)*/: hsl(43, 84%, 65%);
+
+  /*Neutral*/
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--Very-dark-blue);
+  color: var(--Pale-Blue);
+  font-family: "Rubik", sans-serif;
+}
+.master-container {
+  max-width: 330px;
+  margin: 164px auto;
+}
+.main-content {
+  width: 330px;
+  min-height: 180px;
+  background-color: var(--Dark-blue);
+  border-radius: 20px;
+}
+.first-card {
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+/*Contenedor de Jeremy*/
+.first-card__profile {
+  background-color: var(--Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 132px;
+  border-radius: 20px;
+}
+.first-card__image {
+  width: 70px;
+  height: 70px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/*Nombres de Jeremy*/
+.first-card__text {
+  color: var(--Desaturated-blue);
+}
+.first-card__name {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+}
+/*Fechas*/
+.first-card__dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 1.1em;
+}
+.first-card__days {
+  cursor: pointer;
+  color: var(--Desaturated-blue);
+}
+.first-card__days:hover {
+  color: white;
+}
+.first-card__days:focus {
+  color: white;
+}
+/*Cards*/
+.card {
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.card_background {
+  height: 82px;
+  border-radius: 18px 18px 0px 0px;
+  overflow: hidden;
+  background-color: #ff8a64;
+}
+.img-backgrond {
+  margin-top: -10px;
+  margin-left: 230px;
+}
+.card__details {
+  background-color: var(--Dark-blue);
+  display: flex;
+  flex-direction: column;
+  height: 122px;
+  justify-content: space-between;
+  padding: 25px;
+  border-radius: 18px;
+  width: 100%;
+  position: absolute;
+  top: 38px;
+}
+.card__details:hover {
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
+.card__activity,
+.card__time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__activity p {
+  color: white;
+  font-size: 20px;
+}
+.card__time--hour {
+  font-size: 32px;
+  color: white;
+  font-weight: 300;
+}
+.card__time--previus {
+  color: white;
+  font-weight: 300;
+}
+@media (min-width: 1200px) {
+  .master-container {
+    min-width: 1000px;
+    display: flex;
+  }
+  .main-content {
+    margin-right: 30px;
+    max-width: 210px;
+  }
+  .first-card {
+    width: 210px;
+    margin: 0;
+  }
+  .second-seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.4em;
+    margin-bottom: 0;
+  }
+  .first-card__profile {
+    height: 270px;
+    display: block;
+    padding: 1.2em;
+  }
+  .first-card__dates {
+    display: block;
+    padding: 1.2em;
+  }
+  .first-card__days {
+    margin-bottom: 1em;
+  }
+  .first-card__days:last-child {
+    margin: 0;
+  }
+  .first-card__image {
+    margin-bottom: 1.5em;
+  }
+  .first-card__text {
+    margin-bottom: 0.6em;
+  }
+  .first-card__name {
+    font-size: 30px;
+  }
+  .card {
+    width: 240px;
+    margin-bottom: 0.5em;
+  }
+  .img-backgrond {
+    margin-left: 150px;
+    margin-top: -8px;
+  }
+  .card__time {
+    display: block;
+  }
+  .card__details {
+    height: 83%;
+  }
+  .card__time--hour {
+    margin-bottom: 0.2em;
+    margin-top: 0.4em;
+    font-size: 40px;
+  }
+}
